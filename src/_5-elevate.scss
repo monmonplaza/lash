@@ -1,0 +1,59 @@
+.elevate {
+    padding:8rem 0 8rem 0;
+    h1 {
+        font-size: 7rem;
+        margin-bottom: 8.5rem;
+    }
+    .wrapper-row {
+        display: flex;
+        justify-content: space-between;
+        .elevate__content {
+            h2 {
+                margin-bottom: 10rem;
+            }
+            .tel {
+                font-size: 1.7;
+            }
+        }
+
+        .elevate__map {
+            position: relative;
+            left: -3rem;
+            top: 4rem;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0rem;
+                right:-3.4rem;
+                width: 59rem;
+                height: 58rem;
+                background-color: $secondary-color;
+                z-index: -1;
+                margin-left: -3.4rem;
+            }
+            p {
+                position: absolute;
+                right: -3.4rem;
+                top: -3rem;
+                padding: 0;
+                margin-bottom: 0;
+            }
+        }
+
+        .elevate__map__box {
+            border-left: 2.3rem solid $primary-color;
+            border-top: 3.4rem solid $primary-color;
+            border-right: 2.3rem solid $primary-color;
+            border-bottom: 3.4rem solid $primary-color;   
+            z-index: 2;
+            margin-top: 3.4rem;
+
+            iframe {
+                display: block;
+            }
+     
+           
+           
+        }
+    }
+}

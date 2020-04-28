@@ -1,0 +1,42 @@
+$primary-color: #ED1556;
+$secondary-color:#2B93D1;
+$dark-color:#000000;
+$light-color:#fff;
+
+
+
+@font-face {
+    font-family: 'din-regular';
+    src: url('../font/din-regular.woff2') format('woff2'),
+         url('../font/din-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'din-medium';
+    src: url('../font/din-medium.woff2') format('woff2'),
+         url('../font/din-medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'din-condensed';
+    src: url('../font/din-condensed.woff2') format('woff2'),
+         url('../font/din-condensed.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'din-bold';
+    src: url('../font/din-bold.woff2') format('woff2'),
+         url('../font/din-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

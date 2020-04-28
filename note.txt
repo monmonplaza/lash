@@ -1,0 +1,13 @@
+container - 1150px instead of 1250px
+outline text - 60px instead of 53px
+
+
+html/css
+
+A. section 1 (banner) - 4hrs
+B. section 2 (elevate...)- 3hrs
+C. section 3 (call to action A)- 10mins
+D. section 4 (customize look...)- 3hrs
+E. section 3 (call to action B)- 10mins
+D. section 5 (girl image...)- 3hrs
+E. optimization - 2hr 
