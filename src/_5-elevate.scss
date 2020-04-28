@@ -30,6 +30,10 @@
                 background-color: $secondary-color;
                 z-index: -1;
                 margin-left: -3.4rem;
+                @include media-query(750px) {
+                    width: 55rem;
+                    height: 55rem;
+                   }
             }
             p {
                 position: absolute;
@@ -50,10 +54,17 @@
 
             iframe {
                 display: block;
-            }
+                @include media-query(1050px) {
+                    width: 54rem;
+                    height: 54rem;
+                   }
+
+                   @include media-query(750px) {
+                    width: 50rem;
+                    height: 50rem;
+                   }
      
-           
-           
+            }
         }
     }
 }

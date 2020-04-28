@@ -1,9 +1,22 @@
 html {
     font-size: 10px;
+    @include media-query(1150px) {
+        font-size: 9px;
+       
+    }
+    @include media-query(1050px) {
+        font-size: 8px;
+       
+    }
+
+    @include media-query(850px) {
+        font-size: 7px;
+       
+    }
 }
 
 body {
-    font-family: "din-regular", sans-serif;
+    font-family: "din-medium", sans-serif;
     font-size: 1.7rem;
     line-height: 1.6;
     color: $dark-color;

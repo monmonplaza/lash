@@ -1,6 +1,10 @@
 .container {
-    max-width: 115rem;
+    max-width: 125rem;
     margin: 0 auto;
+    @include media-query(1150px) {
+        padding: 0 1.5rem;
+       
+    }
 }
 
 .btn {
@@ -8,11 +12,15 @@
     align-items: center;
     justify-content: center;
     width: 30rem;
-    height: 7rem;
+    height: 6rem;
     font-size: 1.4rem;
     border: 1px solid;
     border-radius: .5rem;
     letter-spacing: .5rem;
+    text-transform: uppercase;
+    @include media-query(920px) {
+        width: 27rem;
+    }
 }
 
 .header-outline {
@@ -23,6 +31,9 @@
     letter-spacing: .8rem;
     font-family: 'din-bold';
     font-size: 6.2rem;
+    @include media-query(920px) {
+        font-size: 5.5rem;
+    }
 }
 
 .section-header {

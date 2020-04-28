@@ -40,3 +40,11 @@ $light-color:#fff;
     font-style: normal;
     font-display: swap;
 }
+
+
+
+@mixin media-query($width){
+    @media screen and (max-width: $width) {
+        @content;
+    }
+}

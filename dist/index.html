@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amazing Lashes</title>
     <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/medium.min.css" media="(max-width: 415px)">
 </head>
 <body>
     <header class="header">
         <div class="container">
             <div class="header__wrapper">
-                <!-- Add sourceset -->
-                <img src="./img/logo.png" alt="Amazing Lashes Logo">
+                <picture>
+                    <source media="(max-width:850px)" srcset="./img/logo_md.png" >                             
+                    <img src="./img/logo.png" alt="Amazing Lashes Logo">
+                </picture>
                 <a href="#" class="btn"> (949) 555-5555</a>
             </div>
         </div>
@@ -23,13 +26,27 @@
             <div class="banner__wrapper">
             <div class="banner__red">
                 <div class="banner__red__wrapper">
-                    <img src="./img/silo.png" alt="">
+                    <picture>
+                        <!-- <source media="(max-width:1500px)" srcset="./img/silo.png" > -->
+                            <source media="(max-width:415px)" srcset="./img/silo_sm.png" >                               
+
+                        <source media="(max-width:850px)" srcset="./img/silo_md.png" > 
+                        <img src="./img/silo.png" alt="">
+                    </picture>
+                   
                     <h2 class="section-header text-light">You can have<br>longer, fuller <br> lashes today</h2>
                 </div>
             </div>
             <div class="banner__blue">
                     <form action="" class="banner__blue__box " >
-                        <img src="./img/price_banner.svg" alt="">
+                      
+                        <picture>
+                            <!-- <source media="(max-width:1500px)" srcset="./img/silo.png" > -->
+                                <source media="(max-width:415px)" srcset="./img/price_banner_sm.svg" >                               
+    
+                           
+                                <img src="./img/price_banner.svg" alt="">
+                        </picture>
                         <p class="text-light">Regular Price $250</p>
                         <small class="text-light">Limited Time Only </small>
                         <input type="text" class="input" placeholder="First Name">
@@ -64,6 +81,14 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="cta-a">
+        <h2 class="section-header">
+            Say GoodBye to Mascara <br>
+            and Hello to Amazing Lash Extensions 
+        </h2>
+        <a href="#" class="btn text-light bg-primary"> Get Offer Now</a>
     </section>
 
 
