@@ -11,8 +11,8 @@
    
     .banner__wrapper {
         flex-direction: row;
-        flex-wrap: wrap;
-        height: 1250px;
+        flex-wrap: wrap;  
+        height: 1300px;
         .banner__red {
             order: 2;
             flex-basis: 100%;
@@ -20,8 +20,8 @@
                 display: none;
             }
             img {
-                width: 100%;
-                left: 0;
+                left: 50%;
+                transform: translateX(-50%);
                 bottom: 40%
             }
             h2 {
@@ -31,9 +31,10 @@
                 top: 70%;
                 width: 100%;
             }
-            .pattern--banner {
-                height: 2.8rem;
-                width: auto;
+            &__wrapper .pattern--banner {
+       
+                left: -2rem;
+             
             }
         }
 
@@ -45,8 +46,9 @@
                 display: none;
             }
             &__box {
-            max-width: 100%;
-            right: 0;
+            width: 65rem;
+            right: 50%;
+            transform: translateX(50%);
             input,
             button {
                 width: 75%;
@@ -65,19 +67,35 @@
         flex-direction: row;
         .elevate__map {
             left: 0;
-            width: 95%;
+            flex: 0 0 97%;
             iframe{
                 width: 100%;
             }
             &::before {
-                width: 60rem;
-             }
+                width: 93rem;
+                right: -2rem;
+            }
 
+            p {
+                right: -2rem;
+            }
             .pattern--elevate-a,
             .pattern--elevate-b  {
-                height: 2.8rem;
-                width: auto;
+          
+                width: 42.3rem;
             }
+
+            .pattern--elevate-a {
+             
+               left: -4rem;
+            }
+
+            .pattern--elevate-b  {
+            
+               right: -6rem;
+            }
+
+           
           
         }
     }
@@ -99,11 +117,7 @@
               right: -2.4rem;  
             }
         }
-        .pattern--customize-a,
-        .pattern--customize-b  {
-            height: 2.8rem;
-            width: auto;
-        }
+       
     }
 }
 
@@ -120,6 +134,9 @@
     &__content {
         margin: 0 auto 12rem auto;
         right: 0;
+        &::before {
+            right:-2rem;
+        }
        
     }
 
@@ -129,9 +146,51 @@
     }
 }
 
-
-
-
 }
 
 
+@media screen and (max-width:455px) {
+
+    .banner__red img.banner__img {
+        width: 380px;
+    }
+
+    .banner {
+        .banner__wrapper{
+            .banner__blue__box {
+                width: 53rem;
+            }
+            
+        }    
+    }
+
+    .elevate {
+        overflow: hidden;
+        .wrapper__row {
+            flex-wrap: wrap;
+            flex-direction: row;
+            .elevate__map {
+                left: 0;
+                width: 95%;
+                iframe{
+                    width: 100%;
+                }
+                &:before {
+                    width: 44rem;
+                    }
+                }
+               
+            }
+        }
+    
+    
+   .lady,
+   .customize {
+     overflow: hidden;  
+   }
+
+   
+
+  
+    
+}

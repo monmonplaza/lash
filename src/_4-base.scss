@@ -1,5 +1,5 @@
 .container {
-    max-width: 125rem;
+    max-width: 120rem;
     margin: 0 auto;
     @include media-query(1150px) {
         padding: 0 1.5rem;
