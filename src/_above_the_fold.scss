@@ -73,7 +73,11 @@
             
         }
 
-
+        .pattern--banner {
+            top: -.6rem;
+            left: -15rem;
+            z-index: 3;
+        }
     }
 
     &__blue {
@@ -132,20 +136,6 @@
                     width: 80%;  
                 }
             }
-
-            p {
-                font-size: 1.8rem;
-                margin-bottom: 0;
-            }
-
-            small {
-                font-size: 1.4rem;
-                display: block;
-                margin-bottom: 2rem;
-                opacity: .8;
-            }
-
-
         }
     }
 }

@@ -1,7 +1,12 @@
 @media screen and (max-width:769px) {
    .banner {
+       margin-top: 10rem;
     .container {
         padding: 0;
+    }
+
+    &__red {
+        flex-basis: 76rem;
     }
    
     .banner__wrapper {
@@ -26,12 +31,16 @@
                 top: 70%;
                 width: 100%;
             }
+            .pattern--banner {
+                height: 2.8rem;
+                width: auto;
+            }
         }
-    }
-    .banner__blue {       
+
+        .banner__blue {       
             order: 1;
             flex-basis: 100%;
-            margin-bottom: 40rem;
+            margin-bottom: 50rem;
             &::after {
                 display: none;
             }
@@ -49,9 +58,9 @@
           }
         }
     }
-
+}
 .elevate {
-    .wrapper-row {
+    .wrapper__row {
         flex-wrap: wrap;
         flex-direction: row;
         .elevate__map {
@@ -60,13 +69,69 @@
             iframe{
                 width: 100%;
             }
-            &:before {
-                width: 44rem;
+            &::before {
+                width: 60rem;
+             }
+
+            .pattern--elevate-a,
+            .pattern--elevate-b  {
+                height: 2.8rem;
+                width: auto;
             }
+          
         }
     }
 }
+
+.customize {
+    .wrapper__row {
+        flex-wrap: wrap;
+        flex-direction: row;
+        .customize__content {
+            flex: 0 0 100%;
+            padding-right: 0;
+        }
     
+        .customize__slider {
+            flex: 0 0 100%;
+            left: -2.4rem;
+            &::before {
+              right: -2.4rem;  
+            }
+        }
+        .pattern--customize-a,
+        .pattern--customize-b  {
+            height: 2.8rem;
+            width: auto;
+        }
+    }
+}
+
+.lady {
+    height: 180rem;
+    .wrapper__row {
+        flex-wrap: wrap;
+        flex-direction: row;
+       
+    }
+    &__img {
+        margin: 0 auto 12rem auto;
+    }
+    &__content {
+        margin: 0 auto 12rem auto;
+        right: 0;
+       
+    }
+
+    .pattern--lady-b {
+        height: 2.8rem;
+        width: auto;
+    }
+}
+
+
+
+
 }
 
 

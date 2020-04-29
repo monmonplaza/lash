@@ -4,7 +4,7 @@
         font-size: 7rem;
         margin-bottom: 8.5rem;
     }
-    .wrapper-row {
+    .wrapper__row {
         display: flex;
         justify-content: space-between;
         .elevate__content {
@@ -15,7 +15,7 @@
                 font-size: 1.7;
             }
         }
-
+  
         .elevate__map {
             position: relative;
             left: -3rem;
@@ -30,10 +30,7 @@
                 background-color: $secondary-color;
                 z-index: -1;
                 margin-left: -3.4rem;
-                @include media-query(750px) {
-                    width: 55rem;
-                    height: 55rem;
-                   }
+            
             }
             p {
                 position: absolute;
@@ -41,6 +38,14 @@
                 top: -3rem;
                 padding: 0;
                 margin-bottom: 0;
+            }
+            .pattern--elevate-a {
+                top: 2.5rem;
+                left: -8rem;
+            }
+            .pattern--elevate-b {
+                bottom:-.4rem;
+                right: -19.5rem;
             }
         }
 

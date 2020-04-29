@@ -1,0 +1,26 @@
+@media screen and (max-width:455px) {
+   
+
+    .elevate {
+        .wrapper__row {
+            flex-wrap: wrap;
+            flex-direction: row;
+            .elevate__map {
+                left: 0;
+                width: 95%;
+                iframe{
+                    width: 100%;
+                }
+                &:before {
+                    width: 44rem;
+                    }
+                }
+               
+            }
+        }
+    
+    
+    
+
+    
+}

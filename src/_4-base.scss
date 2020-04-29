@@ -45,12 +45,46 @@
   
 }
 
+.regulary--price {
+    font-size: 1.8rem;
+    margin-bottom: 0;
+}
+.alert--message {
+    margin-top: 5rem;
+    font-family: 'din-condensed';
+    font-weight: bold;
+    font-size: 2.4rem;
+
+}
+
+.limited--time {
+    font-size: 1.4rem;
+    display: block;
+    margin-bottom: 2rem;
+    opacity: .8;
+}
+
 .text-light {
     color: $light-color;
 }
 .text-primary {
     color: $primary-color;
 }
+
+.text-bold {
+    font-family: 'din-bold';
+}
+
+.text-outline {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.2rem $secondary-color;
+}
+
 .bg-primary {
     background-color: $primary-color;
+}
+
+.pattern {
+    position: absolute;
+    z-index: 1;
 }
