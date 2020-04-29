@@ -7,5 +7,4 @@ var slider = tns({
     controls: false,
     autoplayButtonOutput: false,
     mouseDrag:true
-    
   });
