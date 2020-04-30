@@ -1,6 +1,9 @@
 
 .header {
-    padding-top: 3rem;    
+    padding-top: 3rem;  
+    @include media-query(414px) {
+        padding:3rem 1.5rem 0 1.5rem;
+       }  
     &__wrapper {
         display: flex;
         justify-content: space-between;
@@ -8,12 +11,15 @@
             border-color: $primary-color;
             color: $primary-color;
             align-self: flex-end;
+            @include media-query(850px) {
+
+                align-self: center
+               }
         }
         img {
             @include media-query(1050px) {
                 width: 120px;
                }
-
                @include media-query(850px) {
                 width: 102px;
                }
@@ -23,6 +29,9 @@
  
 .banner {
     margin-top: 20rem;
+    @include media-query(769px) {
+        margin-top: 1rem;
+       }
     &__wrapper {
         display: flex;
         height: 60rem;
@@ -30,6 +39,9 @@
 
     h1 {
         text-align: right;
+        @include media-query(769px) {
+            text-align: center;
+           }
     }
     &__red {
         background-color: $primary-color;
@@ -63,12 +75,16 @@
             @include media-query(850px) {
                 width: 440px;
             }
+
+            @include media-query(430px) {
+                width: 360px;
+            }
         }
 
         h2 {
             position: absolute;
-            right: 7rem;
-            top: 50%;
+            right: 8rem;
+            top: calc(50% + .5rem);
             transform: translateY(-50%);
             
         }
@@ -108,7 +124,7 @@
                 max-width: 30rem;
                 height: 4rem;
                 border: 2px solid $light-color; 
-                padding:  1.4rem 2rem;
+                padding:  1.6rem 2.2rem;
                 margin-bottom: 1rem;
                 border-radius: .5rem;
                 @include media-query(920px) {

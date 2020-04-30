@@ -9,13 +9,17 @@
     color: $light-color;
     h2 {
         margin-bottom: 4.5rem;
+        
     }
     a {
         margin: 0 auto;
         border-color: $primary-color;
+        width: 35rem;
+        height: 9rem;
+        font-size: 1.6rem;
     }
 }
-
+  
 .cta-b {
     margin-bottom: 0;
     background-color: $primary-color;
@@ -25,9 +29,15 @@
 }
 
 footer {
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    border-top: .7rem solid #847F7F;
     text-align: center;
-    padding: .5rem 0;
+    height: 5rem;
     p {
+        font-family: 'din-regular', sans-serif;
         margin-bottom: 0;
+        font-size: 1.8rem;
     }
 }

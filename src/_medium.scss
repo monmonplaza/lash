@@ -1,6 +1,5 @@
 @media screen and (max-width:769px) {
    .banner {
-       margin-top: 10rem;
     .container {
         padding: 0;
     }
@@ -32,7 +31,6 @@
                 width: 100%;
             }
             &__wrapper .pattern--banner {
-       
                 left: -2rem;
              
             }
@@ -72,7 +70,7 @@
                 width: 100%;
             }
             &::before {
-                width: 93rem;
+                width: 63rem;
                 right: -2rem;
             }
 
@@ -130,11 +128,19 @@
     }
     &__img {
         margin: 0 auto 12rem auto;
+        width: 54rem;
+        &::before {
+            left: -1rem;
+            width: 49rem;
+        }
+       
     }
     &__content {
         margin: 0 auto 12rem auto;
         right: 0;
+        width: 54rem;
         &::before {
+            width: 49rem;
             right:-2rem;
         }
        
@@ -144,25 +150,38 @@
         height: 2.8rem;
         width: auto;
     }
-}
+    }
 
 }
 
 
 @media screen and (max-width:455px) {
 
-    .banner__red img.banner__img {
-        width: 380px;
-    }
+   
 
     .banner {
         .banner__wrapper{
             .banner__blue__box {
                 width: 53rem;
             }
+            .banner__blue {       
+                margin-bottom: 50rem;
+           }
+
+           .banner__red {       
+            margin-top: -15rem;
+            img.banner__img {
+                width: 380px;
+                bottom: 44%;
+
+            }
+           }
             
-        }    
+        }
+       
     }
+        
+      
 
     .elevate {
         overflow: hidden;
@@ -182,13 +201,34 @@
                
             }
         }
+
+    .lady {
+        &__content {
+            width: 46.5rem;
+            &::before {
+                width: 43rem;
+            }
+           
+        }
+        &__img {
+            width: 46.5rem;
+            &::before {
+                left: -1rem;
+                width: 43rem;
+            }
+           
+        }
+      
+    
+    }
     
     
    .lady,
    .customize {
-     overflow: hidden;  
+     overflow: hidden;   
    }
 
+  
    
 
   

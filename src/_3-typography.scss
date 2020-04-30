@@ -18,14 +18,19 @@ html {
 
 body {
     font-family: "din-medium", sans-serif;
-    font-size: 1.7rem;
-    line-height: 1.6;
+    font-size: 1.8rem;
+    line-height: 1.7;
     color: $dark-color;
     overflow-x: hidden;
 }
 
 h1 {
     font-size: 5.2rem;
+}
+
+h3 {
+    font-size: 1.7rem;
+    letter-spacing: 1px;
 }
 
 a {

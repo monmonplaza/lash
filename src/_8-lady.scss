@@ -1,5 +1,5 @@
 .lady {
-    padding:13rem 0 10rem 0;
+    padding:17rem 0 10rem 0;
     .wrapper__row {
         display: flex;
         justify-content: space-between;
@@ -23,7 +23,7 @@
         &::before {
             content: '';
             position: absolute;
-            left:-5rem;
+            left:-4rem;
             top: -3rem;
             width: 53rem;
             height: 65rem;
@@ -40,7 +40,10 @@
         width: 54rem;
         height: 71.4rem;
         padding: 10rem 6rem 5rem 6rem;
-        right: 5.5rem;
+        right: 4rem;
+        @include media-query(940px){
+            right: 0;
+        }
         &::before {
             content: '';
             position: absolute;

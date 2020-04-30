@@ -3,11 +3,20 @@
     h1 {
         font-size: 7rem;
         margin-bottom: 8.5rem;
+        @include media-query(769px) {
+            text-align: center;
+           }
+    
     }
     .wrapper__row {
         display: flex;
         justify-content: space-between;
         .elevate__content {
+            @include media-query(769px) {
+                    padding-left: 2rem;
+                    padding-right: 2rem;
+               }
+        
             h2 {
                 margin-bottom: 10rem;
             }
@@ -44,16 +53,16 @@
                 left: -8rem;
             }
             .pattern--elevate-b {
-                bottom:-.4rem;
+                bottom:-.2rem;
                 right: -19.5rem;
             }
         }
 
         .elevate__map__box {
-            border-left: 2.3rem solid $primary-color;
-            border-top: 3.4rem solid $primary-color;
-            border-right: 2.3rem solid $primary-color;
-            border-bottom: 3.4rem solid $primary-color;   
+            border-left: 2.4rem solid $primary-color;
+            border-top: 3.8rem solid $primary-color;
+            border-right: 2.4rem solid $primary-color;
+            border-bottom: 3.8rem solid $primary-color;   
             z-index: 2;
             margin-top: 3.4rem;
 
